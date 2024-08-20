@@ -110,8 +110,9 @@ def main():
 
         print(data)
 
+        jsondata=json.loads(input)
 
-        df=pd.DataFrame([list(json.loads(input).values())], columns=features)
+        df=pd.DataFrame([list(jsondata.values())], columns=features)
 
         print(df)
         features_list = df.values.tolist()
