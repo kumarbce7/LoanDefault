@@ -9,7 +9,6 @@ Original file is located at
 
 import numpy as np
 import pandas as pd
-!pip install streamlit
 import streamlit as st
 from sklearn import preprocessing
 import pickle
