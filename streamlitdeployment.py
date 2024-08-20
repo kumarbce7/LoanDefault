@@ -33,13 +33,13 @@ def main():
     income = st.text_input("Income","0")
 
     if st.button("Predict"):
-        features = [['loan_limit_cf', 'loan_limit_missing', 'loan_limit_ncf',
+        features = ['loan_limit_cf', 'loan_limit_missing', 'loan_limit_ncf',
        'Gender_Female', 'Gender_Joint', 'Gender_Male',
        'Gender_Sex Not Available', 'approv_in_adv_missing',
        'approv_in_adv_nopre', 'approv_in_adv_pre', 'total_units_1U',
        'total_units_3U', 'total_units_4U', 'loan_purpose_p1',
        'loan_purpose_p3', 'Credit_Worthiness_l1', 'Credit_Worthiness_l2',
-       'open_credit_opc', 'Neg_ammortization_missing',
+       'Neg_ammortization_missing',
        'Neg_ammortization_neg_amm', 'Neg_ammortization_not_neg',
        'interest_only_not_int', 'lump_sum_payment_lpsm',
        'construction_type_sb', 'occupancy_type_ir', 'occupancy_type_sr',
@@ -51,7 +51,7 @@ def main():
        'Region_North-East', 'Region_south', 'Security_Type_Indirect',
        'Security_Type_direct', 'loan_amount', 'rate_of_interest',
        'Upfront_charges', 'term', 'property_value', 'income', 'Credit_Score',
-       'LTV', 'dtir1', 'age_encoded','loan_type_encoded']]
+       'LTV', 'dtir1', 'age_encoded', 'loan_type_encoded']
 
         data = {'loan_limit_cf': -1.468563640679615,
                 'loan_limit_missing': 1.9537079229283951,
@@ -70,7 +70,6 @@ def main():
                 'loan_purpose_p3': 0.0,
                 'Credit_Worthiness_l1': 1.0,
                 'Credit_Worthiness_l2': 1.0,
-                'open_credit_opc': 0.0,
                 'Neg_ammortization_missing': 0.0,
                 'Neg_ammortization_neg_amm': 0.0,
                 'Neg_ammortization_not_neg': 1.0,
