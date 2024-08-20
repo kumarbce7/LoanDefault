@@ -84,7 +84,7 @@ def main():
                 'age_encoded': 4.0,
                 'loan_type_encoded': 0.0}
 
-    input=st.text_input(json.dumps(data,indent=4))
+    input=st.text_input(json.dumps(data))
 
     if st.button("Predict"):
         features = ['loan_limit_cf', 'loan_limit_missing', 'loan_limit_ncf',
